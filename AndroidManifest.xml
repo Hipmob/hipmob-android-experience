@@ -8,11 +8,11 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <!-- Required for push notifications -->
-    <uses-permission android:name="com.hipmob.android.permission.C2D_MESSAGE" />   
-	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
-	<uses-permission android:name="android.permission.WAKE_LOCK" />
-    
+    <uses-permission android:name="com.hipmob.android.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="18" />
@@ -21,40 +21,33 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".TopLevelOptionsActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.hipmob.android.experience.knowledgebase.KnowledgeBaseOptionsActivity" />
+        <activity android:name="com.hipmob.android.experience.knowledgebase.KnowledgeBaseSearchOnlyActivity" />
+        <activity android:name="com.hipmob.android.experience.knowledgebase.KnowledgeBaseSearchChatAlwaysActivity" />
+        <activity android:name="com.hipmob.android.experience.knowledgebase.KnowledgeBaseSearchChatIfOperatorAvailableActivity" />
+        <activity android:name="com.hipmob.android.experience.chat.LiveChatOptionsActivity" />
+        <activity android:name="com.hipmob.android.experience.chat.DefaultLiveChatActivity" />
+        <activity android:name="com.hipmob.android.experience.articleview.ArticleViewOptionsActivity" />
+        <activity android:name="com.hipmob.android.experience.articleview.ArticleViewOnlyActivity" />
         <activity
-            android:name="com.hipmob.android.experience.knowledgebase.KnowledgeBaseOptionsActivity"
-            />
+            android:name="com.hipmob.android.HipmobCore"
+            android:label="@string/app_name" />
         <activity
-            android:name="com.hipmob.android.experience.chat.LiveChatOptionsActivity"
-            />
+            android:name="com.hipmob.android.HipmobHelpDeskArticleViewActivity"
+            android:label="@string/app_name" />
         <activity
-            android:name="com.hipmob.android.experience.articleview.ArticleViewOptionsActivity"
-            />
-        <activity
-            android:name="com.hipmob.android.experience.articleview.ArticleViewOnlyActivity"
-            />
-        <activity
-            android:name="com.hipmob.android.experience.knowledgebase.KnowledgeBaseSearchOnlyActivity"
-            />
-        <activity
-            android:name="com.hipmob.android.experience.knowledgebase.KnowledgeBaseSearchChatAlwaysActivity"
-            />
-        <activity
-            android:name="com.hipmob.android.experience.knowledgebase.KnowledgeBaseSearchChatIfOperatorAvailableActivity"
-            />
-
-        <activity android:name="com.hipmob.android.HipmobCore" android:label="@string/app_name" />
-        <activity android:name="com.hipmob.android.HipmobHelpDeskArticleViewActivity" android:label="@string/app_name" />
-        <activity android:name="com.hipmob.android.HipmobHelpDeskSearchActivity" android:label="@string/app_name" />
+            android:name="com.hipmob.android.HipmobHelpDeskSearchActivity"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>

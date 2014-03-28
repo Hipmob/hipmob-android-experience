@@ -5,13 +5,18 @@ import java.util.Arrays;
 import com.hipmob.android.experience.OptionsAdapter;
 import com.hipmob.android.experience.R;
 import com.hipmob.android.experience.R.layout;
+import com.hipmob.android.experience.articleview.ArticleViewOnlyActivity;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 
-public class LiveChatOptionsActivity extends ListActivity 
+public class LiveChatOptionsActivity extends ListActivity implements OnItemClickListener 
 {
 private String[][] options;
 	
@@ -26,6 +31,9 @@ private String[][] options;
 		options = new String[][]{ new String[]{ "Default Chat", "" } };
 		
 		setListAdapter(new OptionsAdapter(this, Arrays.asList(options), R.layout.twoline));
+		
+		// handle list item clicks
+		getListView().setOnItemClickListener(this);
 	}
 	
 	@Override
@@ -38,5 +46,16 @@ private String[][] options;
 	    default:
             return super.onOptionsItemSelected(item);
 	    }
+	}
+	
+	@Override
+	public void onItemClick(AdapterView<?> arg0, View arg1, int position, long id)
+	{
+		switch(position){
+		case 0:
+			// knowledge base
+			startActivity(new Intent(this, DefaultLiveChatActivity.class));
+			break;
+		}
 	}
 }
