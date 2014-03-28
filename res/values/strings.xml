@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Hipmob Android Experience</string>
+    <string name="article_view_description">This class demonstrates launching a standard knowledge base article display. No chat button will be available.</string>
+    <string name="article_view_source">Source: com.hipmob.android.experienace.articleview.ArticleOnlyActivity.java</string>
+    <string name="article_view_open_article">Open Article</string>
+    <string name="knowledge_base_search_description">This class demonstrates launching a standard knowledge base search window. No chat button will be available, and articles will be displayed within your application.</string>
+    <string name="knowledge_base_search_source">Source: com.hipmob.android.experience.knowledgebase.KnowledgeBaseSearchOnlyActivity.java</string>
+    <string name="knowledgebase_search_open_search">Open Search</string>
+</resources>
