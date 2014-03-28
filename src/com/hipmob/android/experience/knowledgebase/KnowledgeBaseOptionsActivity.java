@@ -60,6 +60,14 @@ public class KnowledgeBaseOptionsActivity extends ListActivity implements OnItem
 			// knowledge base
 			startActivity(new Intent(this, KnowledgeBaseSearchOnlyActivity.class));
 			break;
+		case 1:
+			// knowledge base
+			startActivity(new Intent(this, KnowledgeBaseSearchChatAlwaysActivity.class));
+			break;
+		case 2:
+			// knowledge base
+			startActivity(new Intent(this, KnowledgeBaseSearchChatIfOperatorAvailableActivity.class));
+			break;
 		}
 	}
 }

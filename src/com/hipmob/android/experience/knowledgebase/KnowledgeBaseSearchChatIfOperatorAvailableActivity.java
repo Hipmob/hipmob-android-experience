@@ -14,7 +14,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Button;
 
-public class KnowledgeBaseSearchOnlyActivity extends Activity implements View.OnClickListener
+public class KnowledgeBaseSearchChatIfOperatorAvailableActivity extends Activity implements View.OnClickListener
 {
 	private static String HIPMOB_APP_ID = "b937e4b524f84fde963da380b948c227";
 	
@@ -22,7 +22,7 @@ public class KnowledgeBaseSearchOnlyActivity extends Activity implements View.On
 	public void onCreate(Bundle savedInstanceState) 
 	{
 		super.onCreate(savedInstanceState);
-		this.setContentView(R.layout.knowledgebasesearch);
+		this.setContentView(R.layout.knowledgebasesearchchatifoperator);
 		setTitle("Search Only");
 		getActionBar().setDisplayShowHomeEnabled(true);
 		getActionBar().setHomeButtonEnabled(true);
@@ -57,9 +57,9 @@ public class KnowledgeBaseSearchOnlyActivity extends Activity implements View.On
 		// set the initial search term to 2 specific articles. You can pass "ids:all" to show all articles, or pass
 		// a specific search term to perform a search
 		i.putExtra(HipmobHelpDeskSearchActivity.KEY_DEFAULT_QUERY, "ids:d2637a75c02247c2b13237b4e309a17e,a488a80132a34926ad5dd5991224de08");
-		
-		// disable the chat
-		i.putExtra(HipmobHelpDeskSearchActivity.KEY_DISABLE_CHAT, Boolean.TRUE);
+
+		// the chat shows by default if it is not disabled: check for an operator
+		i.putExtra(HipmobHelpDeskSearchActivity.KEY_CHECK_FOR_OPERATOR , Boolean.TRUE);
 		
 		startActivity(i);
 	}

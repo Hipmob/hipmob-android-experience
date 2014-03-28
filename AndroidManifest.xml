@@ -45,7 +45,13 @@
         <activity
             android:name="com.hipmob.android.experience.knowledgebase.KnowledgeBaseSearchOnlyActivity"
             />
-        
+        <activity
+            android:name="com.hipmob.android.experience.knowledgebase.KnowledgeBaseSearchChatAlwaysActivity"
+            />
+        <activity
+            android:name="com.hipmob.android.experience.knowledgebase.KnowledgeBaseSearchChatIfOperatorAvailableActivity"
+            />
+
         <activity android:name="com.hipmob.android.HipmobCore" android:label="@string/app_name" />
         <activity android:name="com.hipmob.android.HipmobHelpDeskArticleViewActivity" android:label="@string/app_name" />
         <activity android:name="com.hipmob.android.HipmobHelpDeskSearchActivity" android:label="@string/app_name" />

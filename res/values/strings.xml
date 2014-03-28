@@ -5,5 +5,9 @@
     <string name="article_view_open_article">Open Article</string>
     <string name="knowledge_base_search_description">This class demonstrates launching a standard knowledge base search window. No chat button will be available, and articles will be displayed within your application.</string>
     <string name="knowledge_base_search_source">Source: com.hipmob.android.experience.knowledgebase.KnowledgeBaseSearchOnlyActivity.java</string>
+    <string name="knowledge_base_search_chat_description">This class demonstrates launching a standard knowledge base search window. A chat button will always be available, and articles will be displayed within your application.</string>
+    <string name="knowledge_base_search_chat_source">Source: com.hipmob.android.experience.knowledgebase.KnowledgeBaseSearchChatAlwaysActivity.java</string>
+    <string name="knowledge_base_search_chat_if_operator_description">This class demonstrates launching a standard knowledge base search window. A chat button will only be shown if an operator is online, and articles will be displayed within your application. If no operator is available a custom button will be shown that opens an email dialog.</string>
+    <string name="knowledge_base_search_chat_if_operator_source">Source: com.hipmob.android.experience.knowledgebase.KnowledgeBaseSearchChatIfOperatorAvailableActivity.java</string>
     <string name="knowledgebase_search_open_search">Open Search</string>
 </resources>
