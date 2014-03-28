@@ -13,4 +13,9 @@
     <string name="default_chat_description">This class demonstrates launching a standard live chat view controller.</string>
     <string name="default_chat_source">Source: com.hipmob.android.experience.chat.DefaultLiveChatActivity.java</string>
     <string name="default_chat_open_chat">Open Chat</string>
+    
+    <string name="sender_ids">622179555397</string>
+    <string name="notification_target">com.hipmob.android.TestActivity</string>
+    <string name="notification_message_multiple">You have {{count}} new messages.</string>
+    <string name="notification_message_single">You have 1 new message.</string>
 </resources>
