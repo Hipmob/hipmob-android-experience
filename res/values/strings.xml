@@ -10,12 +10,14 @@
     <string name="knowledge_base_search_chat_if_operator_description">This class demonstrates launching a standard knowledge base search window. A chat button will only be shown if an operator is online, and articles will be displayed within your application. If no operator is available a custom button will be shown that opens an email dialog.</string>
     <string name="knowledge_base_search_chat_if_operator_source">Source: com.hipmob.android.experience.knowledgebase.KnowledgeBaseSearchChatIfOperatorAvailableActivity.java</string>
     <string name="knowledgebase_search_open_search">Open Search</string>
-    <string name="default_chat_description">This class demonstrates launching a standard live chat view controller.</string>
+    <string name="default_chat_description">This class demonstrates launching a standard live chat window.</string>
     <string name="default_chat_source">Source: com.hipmob.android.experience.chat.DefaultLiveChatActivity.java</string>
-    <string name="default_chat_open_chat">Open Chat</string>
+    <string name="custom_message_layout_chat_description">This class demonstrates launching a live chat window with a custom message layout.</string>
+    <string name="custom_message_layout_chat_source">Source: com.hipmob.android.experience.chat.CustomMessageLayoutLiveChatActivity.java</string>
+    <string name="chat_open_chat">Open Chat</string>
     
-    <string name="sender_ids">622179555397</string>
-    <string name="notification_target">com.hipmob.android.TestActivity</string>
+    <string name="sender_ids">59106397686</string>
+    <string name="notification_target">com.hipmob.android.experience.chat.DefaultLiveChatActivity</string>
     <string name="notification_message_multiple">You have {{count}} new messages.</string>
     <string name="notification_message_single">You have 1 new message.</string>
 </resources>

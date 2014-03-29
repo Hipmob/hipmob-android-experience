@@ -28,7 +28,9 @@ private String[][] options;
 		getActionBar().setDisplayShowHomeEnabled(true);
 		getActionBar().setHomeButtonEnabled(true);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-		options = new String[][]{ new String[]{ "Default Chat", "" } };
+		options = new String[][]{ new String[]{ "Default Chat", "" },
+				new String[]{ "Custom Row Layout", "Use a custom chat row layout" }
+		};
 		
 		setListAdapter(new OptionsAdapter(this, Arrays.asList(options), R.layout.twoline));
 		
@@ -55,6 +57,10 @@ private String[][] options;
 		case 0:
 			// knowledge base
 			startActivity(new Intent(this, DefaultLiveChatActivity.class));
+			break;
+		case 1:
+			// knowledge base
+			startActivity(new Intent(this, CustomMessageLayoutLiveChatActivity.class));
 			break;
 		}
 	}

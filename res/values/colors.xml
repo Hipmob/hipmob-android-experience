@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="white">#FFFFFF</color>
+	<color name="green">#009933</color>
+	<color name="red">#B80000</color>
+	<color name="darkerred">#F00000</color>
+	<color name="black">#000000</color>
+	<color name="texthighlight">#EECF6A</color>
+	<color name="gray">#C5C5C5</color>
+	<color name="light_grey">#ededed</color>
+	<color name="normal">#b0b0b0</color>
+    <color name="light">#ffffff</color>
+    <color name="dark">#000000</color>
+    <color name="segmenthighlight">#38c0f4</color>
+    <color name="appblue">#336699</color>
+    
+    <color name="actionbar_separator">#398DB5</color>
+    <color name="actionbar_title">#FFFFFF</color>
+    <color name="actionbar_background_start">#FF8B1A1A</color>
+    <color name="actionbar_background_end">#FFCD2626</color>
+    <color name="actionbar_background_item_pressed_start">#FF7F00</color>
+    <color name="actionbar_background_item_pressed_end">#EE7600</color>
+</resources>

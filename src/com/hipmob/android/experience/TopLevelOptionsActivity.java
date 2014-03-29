@@ -1,5 +1,7 @@
 package com.hipmob.android.experience;
 
+import com.hipmob.android.HipmobPlayPushService;
+import com.hipmob.android.HipmobPushService;
 import com.hipmob.android.experience.articleview.ArticleViewOptionsActivity;
 import com.hipmob.android.experience.chat.LiveChatOptionsActivity;
 import com.hipmob.android.experience.knowledgebase.KnowledgeBaseOptionsActivity;
@@ -26,6 +28,9 @@ public class TopLevelOptionsActivity extends ListActivity implements OnItemClick
 		
 		// handle list item clicks
 		getListView().setOnItemClickListener(this);
+		
+		// and fire up the play service for push
+		HipmobPlayPushService.setup(this);
 	}
 	
 	@Override
