@@ -42,7 +42,9 @@
         <activity android:name="com.hipmob.android.experience.articleview.ArticleViewOptionsActivity" />
         <activity android:name="com.hipmob.android.experience.articleview.ArticleViewOnlyActivity" />
         <activity
-            android:name="com.hipmob.android.HipmobCore"
+            android:name="com.hipmob.android.HipmobCore" />
+        <activity
+            android:name="com.hipmob.android.experience.chat.CustomHipmobCore"
             android:label="@string/app_name" />
         <activity
             android:name="com.hipmob.android.HipmobHelpDeskArticleViewActivity"

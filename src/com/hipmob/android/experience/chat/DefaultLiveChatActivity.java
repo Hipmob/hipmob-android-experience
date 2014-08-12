@@ -61,6 +61,9 @@ public class DefaultLiveChatActivity extends Activity implements View.OnClickLis
 		// set the app id
 		i.putExtra(HipmobCore.KEY_APPID, HIPMOB_APP_ID);
 		
+		// set the title
+		i.putExtra(HipmobCore.KEY_TITLE, "Support");
+		
 		// pass a user identifier: we create one if we need to
 		String userid = prefs.getString("userid", UUID.randomUUID().toString());
 		if(!prefs.contains("userid")){

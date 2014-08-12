@@ -56,7 +56,7 @@ public class CustomMessageLayoutLiveChatActivity extends Activity implements Vie
 	public void onClick(View arg0)
 	{
 		// launch the article view
-		Intent i = new Intent(this, HipmobCore.class);
+		Intent i = new Intent(this, CustomHipmobCore.class);
 		
 		// set the app id
 		i.putExtra(HipmobCore.KEY_APPID, HIPMOB_APP_ID);
