@@ -39,6 +39,7 @@
         <activity android:name="com.hipmob.android.experience.chat.LiveChatOptionsActivity" />
         <activity android:name="com.hipmob.android.experience.chat.DefaultLiveChatActivity" />
         <activity android:name="com.hipmob.android.experience.chat.CustomMessageLayoutLiveChatActivity" />
+        <activity android:name="com.hipmob.android.experience.chat.HipmobCustomMessageLayoutLiveChatActivity" />
         <activity android:name="com.hipmob.android.experience.articleview.ArticleViewOptionsActivity" />
         <activity android:name="com.hipmob.android.experience.articleview.ArticleViewOnlyActivity" />
         <activity

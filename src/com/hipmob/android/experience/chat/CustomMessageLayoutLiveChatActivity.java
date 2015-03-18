@@ -56,28 +56,6 @@ public class CustomMessageLayoutLiveChatActivity extends Activity implements Vie
 	public void onClick(View arg0)
 	{
 		// launch the article view
-		Intent i = new Intent(this, CustomHipmobCore.class);
-		
-		// set the app id
-		i.putExtra(HipmobCore.KEY_APPID, HIPMOB_APP_ID);
-		
-		// pass a user identifier: we create one if we need to
-		String userid = prefs.getString("userid", UUID.randomUUID().toString());
-		if(!prefs.contains("userid")){
-			SharedPreferences.Editor editor = prefs.edit();
-			editor.putString("userid", userid);
-			editor.commit();
-		}
-
-		// tell us the user
-		i.putExtra(HipmobCore.KEY_USERID, userid);
-		
-		// and then overwrite the row layout so we have custom layout
-		i.putExtra(HipmobCore.KEY_MESSAGE_LAYOUT, R.layout.custom_message_layout);
-
-		// finally, always show the message timestamps
-		i.putExtra(HipmobCore.KEY_SHOW_TIMESTAMPS, HipmobCore.SHOW_TIMESTAMPS_ALWAYS);
-
-		startActivity(i);
+		startActivity(new Intent(this, HipmobCustomMessageLayoutLiveChatActivity.class));
 	}
 }
